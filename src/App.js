@@ -9,7 +9,8 @@ import AboutUs from "./pages/AboutUs";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import QRScanner from "./pages/QRScanner";
-import UserProfileCard from './UserProfileCard/UserProfileCard'; 
+import UserProfileCard from './UserProfileCard'; 
+import ToDoList from "./components/To-DoList";
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         email={user.email}
         avatarUrl={user.avatarUrl}
       />
+       <ToDoList />
       <ToastContainer theme="colored" />
     </div>
   );
